@@ -1,0 +1,13 @@
+# Default Kibana configuration for docker target
+server.host: "0.0.0.0"
+server.shutdownTimeout: "5s"
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+# security
+elasticsearch.username: elastic
+# 본인이 지정한 비밀번호 입력
+elasticsearch.password: 097531
+xpack.security.encryptionKey: "elasticsearch_security_key__char"
+xpack.security.sessionTimeout: 600000
+monitoring.ui.container.elasticsearch.enabled: true
+monitoring.ui.container.logstash.enabled: true

@@ -1,0 +1,8 @@
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+#security
+xpack.monitoring.enabled: true
+xpack.monitoring.elasticsearch.username: elastic
+# 본인이 지정한 비밀번호 입력
+xpack.monitoring.elasticsearch.password: 097531
